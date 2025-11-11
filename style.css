@@ -448,7 +448,7 @@ noscript {
 .about-info p,
 .activeThistab,
 .language-speak article {
-    color: rgb(179, 179, 179)
+    color: rgb(255, 255, 255)
 }
 
 .blob,
@@ -666,7 +666,7 @@ noscript {
 
 #name {
     align-items: flex-start;
-    background: linear-gradient(rgb(205, 205, 205),rgb(102, 102, 182));
+    background: linear-gradient(rgb(255, 255, 255),rgb(182, 182, 251));
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 400% 400%;

@@ -1,0 +1,26 @@
+.my_CV {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ffffff, #f6f6f6);
+  color: #000000;
+  font-weight: 800;
+  font-size: 16px;
+  border: none;
+   
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+
+.my_CV:active {
+  transform: scale(0.97);
+}
+
+.my_CV::after {
+  
+  font-size: 1.1rem;
+}
