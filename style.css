@@ -572,7 +572,18 @@ noscript {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+}
+
+@media (min-width: 1125px) {
+
+    .landing-page-container{
+        margin-left: 35px;
+    }
+
+    .avatar_img_div{
+        padding-right: 35px;
+    }
 }
 
 .text-content {

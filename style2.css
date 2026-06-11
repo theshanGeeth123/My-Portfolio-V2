@@ -107,12 +107,7 @@ body.light-mode .sun-icon {
 }
 
 /* Mobile fix */
-@media screen and (max-width: 998px) {
-  .theme-switch {
-    margin-left: auto;
-    margin-right: 70px;
-  }
-}
+
 
 /* ============================= */
 /* LIGHT MODE SECTION COLORS */
@@ -121,7 +116,7 @@ body.light-mode .sun-icon {
 
 /* Main page background */
 body.light-mode {
-    --color-dark-mode: #ece7e1; /* full body background */
+    --color-dark-mode: #f6f8ffba; /* full body background */
 }
 
 /* Hero small text: I'm */
@@ -194,3 +189,128 @@ body.light-mode .my_CV {
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(17, 24, 39, 0.25);
 }
+
+/* Move avatar image slightly left on larger screens */
+@media (min-width: 1125px) {
+  .avatar_img_div {
+    transform: translateX(-35px);
+  }
+}
+
+/* ===== LIGHT MODE FOOTER FIX ===== */
+
+body.light-mode footer {
+    border-top: 1px solid #d1d5db;
+}
+
+body.light-mode .footer-background {
+    background-color: #f8fafc;
+}
+
+body.light-mode .footer-foreground {
+    background-color: rgba(248, 250, 252, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+body.light-mode .footer-blob {
+    background-color: #93c5fd;
+    opacity: 0.45;
+}
+
+body.light-mode .two-words {
+    color: #374151;
+}
+
+body.light-mode .two-words article {
+    color: #374151;
+}
+
+body.light-mode .getintouch-heading article {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .social-media-container a {
+    border: 2px solid #cbd5e1;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 #2563eb inset;
+}
+
+body.light-mode .SocialHandle,
+body.light-mode #GmailLogo,
+body.light-mode .social-media-container svg,
+body.light-mode .social-media-container svg path,
+body.light-mode .social-media-container svg rect,
+body.light-mode .social-media-container svg circle {
+    fill: #111827 !important;
+    stroke: #111827 !important;
+}
+
+body.light-mode .social-media-container a:hover {
+    box-shadow: 0 0 50px 100px #2563eb inset;
+}
+
+body.light-mode .social-media-container a:hover svg,
+body.light-mode .social-media-container a:hover svg path,
+body.light-mode .social-media-container a:hover svg rect,
+body.light-mode .social-media-container a:hover svg circle {
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* ===== MOBILE THEME TOGGLE CLICK FIX ===== */
+
+
+/* ===== MOBILE NAV + THEME TOGGLE FIX ===== */
+@media screen and (max-width: 998px) {
+  .navbar {
+    z-index: 10000;
+  }
+
+  .theme-switch {
+    position: relative;
+    z-index: 10004;
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: auto;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 115px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10003;
+    pointer-events: none;
+  }
+
+  .hamburgerbase {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    pointer-events: none;
+  }
+
+  #hamburger-button {
+    position: relative;
+    z-index: 10005;
+    pointer-events: auto;
+  }
+}
+
+
+/* 
+@media screen and (min-width:800px){
+.hamburger{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+} */
