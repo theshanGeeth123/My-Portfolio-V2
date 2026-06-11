@@ -25,9 +25,8 @@ noscript {
 
 body,
 noscript {
-    background-color: rgb(8, 9, 9)
+    background-color: var(--color-dark-mode);
 }
-
 .main,
 body {
     overflow-x: hidden
