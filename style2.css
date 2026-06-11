@@ -113,3 +113,84 @@ body.light-mode .sun-icon {
     margin-right: 70px;
   }
 }
+
+/* ============================= */
+/* LIGHT MODE SECTION COLORS */
+/* Add this at the VERY BOTTOM */
+/* ============================= */
+
+/* Main page background */
+body.light-mode {
+    --color-dark-mode: #ece7e1; /* full body background */
+}
+
+/* Hero small text: I'm */
+body.light-mode #hello-friend {
+    color: #1f2937;
+}
+
+/* Hero name: Theshan Geeth. */
+body.light-mode #name {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero large text: I design & code. */
+body.light-mode #work {
+    color: #111827;
+}
+
+/* Hero paragraph */
+body.light-mode #info-para {
+    color: #374151;
+}
+
+/* About section paragraph text */
+body.light-mode .about-info p {
+    color: #374151;
+}
+
+/* Section headings: </AboutMe>, </Skills>, </Projects> */
+body.light-mode .section-heading-article,
+body.light-mode .frontend-dev-heading {
+    background-image: linear-gradient(90deg, #0f766e, #db2777);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Section heading line */
+body.light-mode .sectionHeadingP {
+    background-image: linear-gradient(90deg, #0f766e, #db2777);
+}
+
+/* Navbar and card background */
+body.light-mode .navbar,
+body.light-mode .project-box,
+body.light-mode .tech-stack-box {
+    background-image: linear-gradient(
+        to bottom right,
+        #ffffff,
+        #f3f4f6
+    );
+    border-color: #d1d5db;
+}
+
+/* Project card title */
+body.light-mode .ProjectHeading {
+    color: #111827;
+}
+
+/* Project card description */
+body.light-mode .ProjectDescription {
+    color: #4b5563;
+}
+
+/* Download CV button */
+body.light-mode .my_CV {
+    background: linear-gradient(135deg, #111827, #374151);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(17, 24, 39, 0.25);
+}
