@@ -324,3 +324,9 @@ body.light-mode .social-media-container a:hover svg circle {
 .navbar{
   z-index: 10000;
 }
+
+@media (max-width: 989px){
+  .avatar_img_div{
+    margin-top: 100px;
+  }
+}
